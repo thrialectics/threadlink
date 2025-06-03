@@ -2,7 +2,7 @@
 
 > **Let your documents remember your conversations.**
 
-Threadlink is a lightweight CLI tool that creates persistent links between AI conversations and your local files. It's a protocol for memory—a way to trace any document back to the conversation that sparked it.
+Threadlink is a lightweight CLI tool that creates persistent links between AI conversations and your local files. It's a protocol for context memory—a way to trace any document back to the conversation that sparked it.
 
 ---
 
@@ -135,20 +135,20 @@ threadlink attach new_startup_idea_2025-06-02 ~/Projects/startup/pitch.pdf
 
 ## Advanced Features
 
-- **🏷️ Dual-mode tags**: Use human-readable tags or let the system generate UUIDs
-- **📂 Path normalization**: Handles `~`, relative paths, and symlinks
-- **🔍 Flexible search**: Search by tag name or summary content
-- **🔌 Protocol-based**: Designed to be extended by other tools and plugins
+- **Dual-mode tags**: Use human-readable tags or let the system generate UUIDs
+- **Path normalization**: Handles `~`, relative paths, and symlinks
+- **Flexible search**: Search by tag name or summary content
+- **Protocol-based**: Designed to be extended by other tools and plugins
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
-- [ ] ** Browser extension** for one-click thread creation
-- [ ] ** Obsidian/Notion/VSCode plugins**
-- [ ] ** Semantic search** across thread content
-- [ ] ** Team sharing** and sync options
-- [ ] ** GUI** for non-terminal users
+- [ ] Browser extension for one-click thread creation
+- [ ] Obsidian/Notion/VSCode plugins
+- [ ] Semantic search across thread content
+- [ ] Team sharing and sync options
+- [ ] GUI for non-terminal users
 
 ---
 
@@ -172,7 +172,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
 
 ## Philosophy
 
-> Threadlink isn't trying to be another PKM tool or AI wrapper. It's a **protocol for memory**—a way to maintain context across the gap between conversation and creation. 
+> Threadlink isn't trying to be another PKM tool or AI wrapper. It's a **protocol for context memory**—a way to maintain context across the gap between ephemeral conversation and persistent artifact creation. 
 
 It respects your file system, your privacy, and your existing workflows.
 
