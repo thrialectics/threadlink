@@ -129,7 +129,7 @@ Before submitting security-related changes:
 
 For security-related questions or concerns:
 - **Email**: thrialectics@gmail.com
-- **PGP Key**: [Optional PGP key ID]
+- **PGP Key**: TBD
 - **Response time**: We aim to respond within 48 hours
 
 ---
