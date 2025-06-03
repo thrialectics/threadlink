@@ -1,4 +1,4 @@
-# 🔗 Threadlink
+# Threadlink
 
 > **Let your documents remember your conversations.**
 
@@ -6,7 +6,7 @@ Threadlink is a lightweight CLI tool that creates persistent links between AI co
 
 ---
 
-## ✨ The Problem
+## The Problem
 
 You have a great conversation with ChatGPT. It leads to a document, a design, some code. Two weeks later, you're looking at the file and wondering: 
 
@@ -16,7 +16,7 @@ You have a great conversation with ChatGPT. It leads to a document, a design, so
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -50,7 +50,7 @@ threadlink search "API design"
 
 ---
 
-## 🧠 Core Concepts
+## Core Concepts
 
 Threadlink uses a simple JSON index (`~/.threadlink/thread_index.json`) to maintain links between:
 
@@ -63,7 +63,7 @@ Threadlink uses a simple JSON index (`~/.threadlink/thread_index.json`) to maint
 
 ---
 
-## 📖 Commands Reference
+## Commands Reference
 
 ### Create a new thread
 
@@ -101,9 +101,9 @@ threadlink show project_x
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
-### 📁 Scenario 1: "Where did this file come from?"
+### Scenario 1: "Where did this file come from?"
 
 You're browsing your projects folder and find some old designs. What were they for?
 
@@ -121,7 +121,7 @@ threadlink search "authentication"
 # → Finds all threads about authentication with their links
 ```
 
-### 🚀 Scenario 3: "Keep this project's context together"
+### Scenario 3: "Keep this project's context together"
 
 You're starting a new project with AI assistance:
 
@@ -133,7 +133,7 @@ threadlink attach new_startup_idea_2025-06-02 ~/Projects/startup/pitch.pdf
 
 ---
 
-## 🔧 Advanced Features
+## Advanced Features
 
 - **🏷️ Dual-mode tags**: Use human-readable tags or let the system generate UUIDs
 - **📂 Path normalization**: Handles `~`, relative paths, and symlinks
@@ -144,33 +144,33 @@ threadlink attach new_startup_idea_2025-06-02 ~/Projects/startup/pitch.pdf
 
 ## 🗺️ Roadmap
 
-- [ ] **🌐 Browser extension** for one-click thread creation
-- [ ] **📝 Obsidian/Notion/VSCode plugins**
-- [ ] **🧠 Semantic search** across thread content
-- [ ] **👥 Team sharing** and sync options
-- [ ] **🖥️ GUI** for non-terminal users
+- [ ] ** Browser extension** for one-click thread creation
+- [ ] ** Obsidian/Notion/VSCode plugins**
+- [ ] ** Semantic search** across thread content
+- [ ] ** Team sharing** and sync options
+- [ ] ** GUI** for non-terminal users
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Threadlink is designed as an **open protocol**. We welcome:
 
-- 🐛 Bug reports and feature requests
-- 🔌 Plugin development for other tools
-- 📋 Protocol extensions and improvements
+-  Bug reports and feature requests
+-  Plugin development for other tools
+-  Protocol extensions and improvements
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
 
 ---
 
-## 📄 License
+## License
 
 **MIT License** - see [`LICENSE`](LICENSE) file.
 
 ---
 
-## 🌟 Philosophy
+## Philosophy
 
 > Threadlink isn't trying to be another PKM tool or AI wrapper. It's a **protocol for memory**—a way to maintain context across the gap between conversation and creation. 
 
@@ -180,7 +180,7 @@ It respects your file system, your privacy, and your existing workflows.
 
 <div align="center">
 
-**Built with ❤️ by [Marianne](https://github.com/thrialectics)**
+**Built by [Marianne](https://github.com/thrialectics)**
 
 [Thread Protocol Spec](https://github.com/thrialectics/threadlink/blob/main/PROTOCOL.md) | [Documentation](https://github.com/thrialectics/threadlink#readme) | [Examples](https://github.com/thrialectics/threadlink/tree/main/examples)
 
