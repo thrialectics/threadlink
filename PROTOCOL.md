@@ -269,23 +269,23 @@ def update_thread_index(updates):
 ### 5.1 Durability
 
 **Strong guarantees:**
-- ✅ **Data persistence**: Thread index survives system restarts
-- ✅ **Atomic updates**: No partial writes or corrupted states
-- ✅ **Backup creation**: Automatic backups on corruption detection
-- ✅ **Error recovery**: Graceful handling of malformed data
+- **Data persistence**: Thread index survives system restarts
+- **Atomic updates**: No partial writes or corrupted states
+- **Backup creation**: Automatic backups on corruption detection
+-  **Error recovery**: Graceful handling of malformed data
 
 **Weak guarantees:**
-- ⚠️ **Cross-device sync**: No automatic synchronization
-- ⚠️ **Concurrent access**: Basic file locking, no distributed coordination
-- ⚠️ **Version migration**: Best-effort compatibility across protocol versions
+- **Cross-device sync**: No automatic synchronization
+- **Concurrent access**: Basic file locking, no distributed coordination
+- **Version migration**: Best-effort compatibility across protocol versions
 
 ### 5.2 Locality
 
 **Guarantees:**
-- ✅ **Local-first**: All data stored locally by default
-- ✅ **No external dependencies**: Protocol works offline
-- ✅ **Privacy-preserving**: No automatic data transmission
-- ✅ **User control**: Complete ownership of data and access patterns
+- **Local-first**: All data stored locally by default
+- **No external dependencies**: Protocol works offline
+- **Privacy-preserving**: No automatic data transmission
+- **User control**: Complete ownership of data and access patterns
 
 **Implications:**
 - Chat URLs are stored but never automatically accessed
@@ -296,19 +296,19 @@ def update_thread_index(updates):
 ### 5.3 Mutability
 
 **Thread metadata:**
-- ✅ **Mutable**: Summary, tags, metadata can be updated
-- ✅ **Append-only**: File lists typically grow over time
-- ⚠️ **Timestamp preservation**: `date_created` immutable, `date_modified` updated
+- **Mutable**: Summary, tags, metadata can be updated
+- **Append-only**: File lists typically grow over time
+- **Timestamp preservation**: `date_created` immutable, `date_modified` updated
 
 **File associations:**
-- ✅ **Dynamic**: Files can be linked/unlinked from threads
-- ✅ **Many-to-many**: Files can belong to multiple threads
-- ✅ **Path updates**: File paths updated when files move
+- **Dynamic**: Files can be linked/unlinked from threads
+- **Many-to-many**: Files can belong to multiple threads
+- **Path updates**: File paths updated when files move
 
 **Thread identity:**
-- ⚠️ **Stable**: Thread IDs should not change once created
-- ✅ **Collision handling**: Duplicate IDs handled gracefully
-- ✅ **Deletion support**: Threads can be removed entirely
+- **Stable**: Thread IDs should not change once created
+- **Collision handling**: Duplicate IDs handled gracefully
+- **Deletion support**: Threads can be removed entirely
 
 ---
 
