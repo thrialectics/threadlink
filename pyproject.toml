@@ -8,8 +8,8 @@ version = "0.1.0"
 description = "Create persistent links between AI conversations and your local files"
 readme = "README.md"
 license = {text = "MIT"}
-authors = [{name = "Marianne", email = "your.email@example.com"}]
-maintainers = [{name = "Marianne", email = "your.email@example.com"}]
+authors = [{name = "Marianne", email = "thrialectics@gmail.com"}]
+maintainers = [{name = "Marianne", email = "thrialectics@gmail.com"}]
 keywords = ["ai", "conversation", "memory", "cli", "productivity", "protocol"]
 classifiers = [
     "Development Status :: 3 - Alpha",

@@ -5,7 +5,7 @@
 If you discover a security vulnerability in Threadlink, please report it responsibly:
 
 1. **DO NOT** open a public issue for security vulnerabilities
-2. Email security concerns to: [your-security-email@example.com]
+2. Email security concerns to: thrialectics@gmail.com
 3. Include detailed steps to reproduce the issue
 4. Allow reasonable time for a fix before public disclosure
 
@@ -128,7 +128,7 @@ Before submitting security-related changes:
 ## 🆔 Security Contact
 
 For security-related questions or concerns:
-- **Email**: [your-security-email@example.com]
+- **Email**: thrialectics@gmail.com
 - **PGP Key**: [Optional PGP key ID]
 - **Response time**: We aim to respond within 48 hours
 
