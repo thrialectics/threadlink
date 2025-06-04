@@ -1,8 +1,11 @@
 # Threadlink
 
-> **Let your documents remember your conversations.**
+> **Connect your files with their origin stories**
 
-Threadlink is a lightweight CLI tool that creates persistent links between AI conversations and your local files. It's a protocol for context memory—a way to trace any document back to the conversation that sparked it.
+Threadlink is a lightweight protocol and CLI for creating durable, inspectable links between ephemeral context and persistent files.
+Originally designed to track AI conversations and the artifacts they generate, Threadlink also works across tools and systems—wherever you want to trace how an idea became a file, or how a file shaped downstream thinking.
+
+It’s not just a chatbot memory layer. It’s a protocol for context memory—structured, local-first, and composable.
 
 ---
 
@@ -32,22 +35,37 @@ pip install -e .
 
 ### Basic Usage
 
+Option A: Name your own thread tag (manual)
 ```bash
-# 1. Create a thread reference
-threadlink quick "Discussing API design patterns" https://chat.openai.com/c/abc123
-
-# 2. Attach files to the thread
-threadlink attach api_design_2025-06-02 ~/Documents/api_spec.md
-threadlink attach api_design_2025-06-02 ~/Code/prototype.py
-
-# 3. Later: "What conversation led to this file?"
-threadlink reverse ~/Documents/api_spec.md
-# → Shows thread summary, chat URL, and linked files
-
-# 4. Search your memory
-threadlink search "API design"
+# 1. Create a thread and name it (tag = api_patterns_2025-06-02)
+threadlink new --tag api_patterns_2025-06-02 \
+               --summary "Discussion of API design patterns" \
+               --chat_url https://chat.openai.com/c/abc123
+```
+```bash
+# 2. Attach files to your named thread
+threadlink attach api_patterns_2025-06-02 ~/Documents/api_spec.md
+threadlink attach api_patterns_2025-06-02 ~/Code/prototype.py
 ```
 
+Option B: Let Threadlink generate the tag (auto)
+```bash
+# 1. Create a thread without naming it
+threadlink quick "Discussion of API design patterns" https://chat.openai.com/c/abc123
+```
+```bash
+# 2. Copy the tag shown in the output and use it to attach files
+threadlink attach threadlink_api_design_2025-06-02 ~/Documents/api_spec.md
+```
+
+Later: recall that context
+```bash
+# “What chat produced this file?”
+threadlink reverse ~/Documents/api_spec.md
+
+# “What threads mentioned API design?”
+threadlink search "API design"
+```
 ---
 
 ## Core Concepts
