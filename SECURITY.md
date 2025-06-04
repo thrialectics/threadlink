@@ -1,6 +1,6 @@
-# 🛡️ Security Policy
+# Security Policy
 
-## 🚨 Reporting Security Vulnerabilities
+## Reporting Security Vulnerabilities
 
 If you discover a security vulnerability in Threadlink, please report it responsibly:
 
@@ -9,16 +9,16 @@ If you discover a security vulnerability in Threadlink, please report it respons
 3. Include detailed steps to reproduce the issue
 4. Allow reasonable time for a fix before public disclosure
 
-## 🔒 Security Considerations
+## Security Considerations
 
 ### Data Privacy
 
 Threadlink is designed to be **local-first** and **privacy-respecting**:
 
-- ✅ All data stored locally in `~/.threadlink/`
-- ✅ No data transmitted to external services
-- ✅ Chat URLs are stored as provided (not accessed automatically)
-- ⚠️ **Your thread index contains sensitive file paths and URLs**
+- All data stored locally in `~/.threadlink/`
+- No data transmitted to external services
+- Chat URLs are stored as provided (not accessed automatically)
+- **Warning:** Your thread index contains sensitive file paths and URLs
 
 ### File System Security
 
@@ -37,7 +37,7 @@ Threadlink is designed to be **local-first** and **privacy-respecting**:
 - Shared URLs might be accessible to others
 - Consider using private/limited-access sharing options
 
-## 🛡️ Security Best Practices
+## Security Best Practices
 
 ### For Users
 
@@ -83,14 +83,14 @@ Threadlink is designed to be **local-first** and **privacy-respecting**:
    - Consider encryption for sensitive data
    - Implement backup and recovery procedures
 
-## 🔍 Known Security Limitations
+## Known Security Limitations
 
 1. **No encryption**: Thread data is stored in plain JSON
 2. **No access controls**: Any process with user permissions can read thread data
 3. **URL validation**: Limited validation of chat URLs
 4. **Path traversal**: Basic protection against directory traversal
 
-## 🚀 Future Security Enhancements
+## Future Security Enhancements
 
 - [ ] Optional encryption for thread index
 - [ ] Enhanced URL validation and sanitization
@@ -98,7 +98,7 @@ Threadlink is designed to be **local-first** and **privacy-respecting**:
 - [ ] Audit logging for sensitive operations
 - [ ] Integration with system keychain for sensitive URLs
 
-## 🏗️ Secure Development Guidelines
+## Secure Development Guidelines
 
 ### Dependencies
 - Regularly audit dependencies: `pip audit`
@@ -115,7 +115,7 @@ Threadlink is designed to be **local-first** and **privacy-respecting**:
 - Test with malformed input
 - Verify file permission handling
 
-## 📋 Security Checklist for Contributors
+## Security Checklist for Contributors
 
 Before submitting security-related changes:
 
@@ -125,7 +125,7 @@ Before submitting security-related changes:
 - [ ] File permissions properly set
 - [ ] Documentation updated for security implications
 
-## 🆔 Security Contact
+## Security Contact
 
 For security-related questions or concerns:
 - **Email**: thrialectics@gmail.com

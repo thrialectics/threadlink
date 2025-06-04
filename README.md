@@ -23,6 +23,7 @@ You have a great conversation with ChatGPT. It leads to a document, a design, so
 
 ### Installation
 
+#### macOS / Linux
 ```bash
 # Install from GitHub
 pip install git+https://github.com/thrialectics/threadlink.git
@@ -32,6 +33,30 @@ git clone https://github.com/thrialectics/threadlink.git
 cd threadlink
 pip install -e .
 ```
+
+#### Windows
+```cmd
+# Install from GitHub (Command Prompt)
+pip install git+https://github.com/thrialectics/threadlink.git
+
+# Or clone and install locally
+git clone https://github.com/thrialectics/threadlink.git
+cd threadlink
+pip install -e .
+```
+
+#### Windows (PowerShell)
+```powershell
+# Install from GitHub
+pip install git+https://github.com/thrialectics/threadlink.git
+
+# Or clone and install locally
+git clone https://github.com/thrialectics/threadlink.git
+Set-Location threadlink
+pip install -e .
+```
+
+**Requirements:** Python 3.8+ and Git must be installed on your system.
 
 ### Basic Usage
 
@@ -130,7 +155,7 @@ threadlink reverse ~/Projects/old_design.png
 # → Links back to the ChatGPT conversation that inspired them
 ```
 
-### 🔍 Scenario 2: "I need to revisit that conversation"
+### Scenario 2: "I need to revisit that conversation"
 
 You remember discussing something important but can't find the chat:
 
@@ -160,13 +185,29 @@ threadlink attach new_startup_idea_2025-06-02 ~/Projects/startup/pitch.pdf
 
 ---
 
-## Roadmap
+## The Future of Context Memory
 
-- [ ] Browser extension for one-click thread creation
-- [ ] Obsidian/Notion/VSCode plugins
-- [ ] Semantic search across thread content
-- [ ] Team sharing and sync options
-- [ ] GUI for non-terminal users
+Threadlink is designed to evolve from a personal memory tool into the infrastructure for preserving and sharing human knowledge and reasoning.
+
+### Near-term (6-12 months)
+- **One-click capture**: Browser extensions for instant thread creation from any chat
+- **Smart linking**: Automated detection of conversation-artifact relationships
+- **Visual interfaces**: GUI applications for non-technical users
+- **Popular integrations**: Obsidian, Notion, VSCode, and other productivity tools
+
+### Medium-term (1-2 years)
+- **Semantic search**: Find conversations by concept and meaning, not just keywords
+- **Team collaboration**: Shared thread networks for organizations with privacy controls
+- **Knowledge graphs**: Visualize relationships between ideas, conversations, and artifacts
+- **Workflow integration**: Deep embedding in creative and analytical processes
+
+### Long-term Vision (2-5 years)
+- **Federated networks**: Global knowledge sharing while preserving individual privacy
+- **Institutional memory**: Organizations that never lose context, reasoning, or decision history
+- **Cross-platform ecosystem**: Universal context preservation across all digital tools
+- **New collaboration patterns**: Entirely new ways of building on shared knowledge and reasoning
+
+**This protocol is designed to preserve human context and reasoning across the evolving landscape of digital collaboration.**
 
 ---
 

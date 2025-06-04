@@ -1,4 +1,4 @@
-# 🔗 Threadlink Protocol Specification
+# Threadlink Protocol Specification
 
 **Version:** 1.0  
 **Status:** Draft  
