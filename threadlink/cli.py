@@ -421,6 +421,7 @@ def main():
         parser_reverse = subparsers.add_parser("reverse", help="Find thread linked to a file")
         parser_reverse.add_argument("file", help="Path to the file to look up")
         parser_reverse.set_defaults(func=reverse_lookup)
+        parser_reverse.add_argument("--json", action="store_true")
 
         # Quick thread command
         parser_quick = subparsers.add_parser("quick", help="Quickly create a new thread entry with auto-generated tag")
